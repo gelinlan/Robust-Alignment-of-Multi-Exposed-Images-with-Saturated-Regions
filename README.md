@@ -17,3 +17,4 @@ LBP code does not capture the closeness of two bit-strings and it is sensitive t
 
 For binary descriptor, hamming distance is non-differentiability and unsuitable for optimization.
 
+# The proposed method:
