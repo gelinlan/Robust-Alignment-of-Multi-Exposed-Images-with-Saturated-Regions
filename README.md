@@ -30,4 +30,6 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 
 ## Tests on synthesized sequences
 
-## 
+## Tests on Real sequences
+
+## Tests on Efficiency
