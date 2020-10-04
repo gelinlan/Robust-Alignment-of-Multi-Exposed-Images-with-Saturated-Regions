@@ -31,7 +31,7 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 # Experimental Results
 The proposed method is evaluated with a variety of synthesized images from benchmark datasets, public datasets s and real images. The proposed method are compared with 1) existing non-parametric ordering features using MTB [3], CT [4], LBP [5] and BRIEF [6] methods, while employing the alignment algorithm shown in Section III; 2) the intensity-based IMF; 3) the feature-based method SIFT [7] and the hybird method IMF+SIFT; 4) IMF+BRIEF and IMF+BRIEF+“Hamming” distance (“HD”); 5) IMF+LBP [1]. 6) Learning-based matching methods SuperPoint [8] and LF-Net [9].
 ## Tests on synthesized sequences
-To evaluate the robustness to exposure, the first image is selected as the reference and other images are rotated by 50, and shifted 30 pixels and 10 pixels in y-axis and x-axis respectively. Table1-2 are the motion errors on benchmark and public database. The average errors of the proposed method is the smallest, which implies the proposed method is suitable for various scene sets alignment and robust to intensity variations. Tables 3-6 summarize the motion errors on “Snowman”, “BigTree”, “Pillar” and “Inscription” sequences. 
+To evaluate the robustness to exposure, the first image is selected as the reference and other images are rotated by 50, and shifted 30 pixels and 10 pixels in y-axis and x-axis respectively. Table1-2 are the motion errors on benchmark and public database. The average errors of the proposed method is the smallest, which implies the proposed method is suitable for various scene sets alignment and robust to intensity variations. Tables 3-6 summarize the motion errors on “Snowman”, “BigTree”, “Pillar” and “Inscription” sequences. <br>
 TABLE 1. Overall results performed on benchmark database. 
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table1.jpg)
 TABLE 2: Overall results performed on 40 Cai’s database
@@ -44,7 +44,7 @@ TABLE 2: Overall results performed on 40 Cai’s database
 ## Tests on Real sequences
 As motion parameters are unknown, the alignment results are evaluated in terms of mutual information (MI)[10], which is a successful measure for registering multi-modal images. Selecting the brightest image as reference, the MIs based on the 35 real sequences in file “Real sequences” are shown below.
 It is noted that the MI values are different for various scenarios due to different contents (static/ dynamic scenes, little/severe saturation, and different EVs etc.), even the alignment performance is the same. But the performance comparison in terms of MI for the identical scene is meaningful.
-
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig5.jpg)
 ## Tests on Efficiency
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table7.jpg)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table8.jpg)
