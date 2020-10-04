@@ -50,3 +50,15 @@ It is noted that the MI values are different for various scenarios due to differ
 ## Tests on Efficiency
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table7.jpg)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table8.jpg)
+
+# References
+[1].	S. Q. Wu, Z. G. Li, J. H. Zheng, and Z. J. Zhu, “Exposure robust method for aligning differently exposed images,” IEEE Signal Processing Letters, vol. 21, no. 7, pp. 885–889, Jul. 2014. <br>
+[2].	J. Cai, S. Gu, L. Zhang, “Learning a Deep Single Image Contrast Enhancer from Multi-Exposure Images,” IEEE Transactions on Image Processing, vol.27, no.4, pp.2049-2062. 2018. <br>
+[3].	G. Ward, “Fast, robust image registration for compositing high dynamic range photographs from hand-held exposures,” Journal of graphics tools, vol.8, no.2, pp.17-30, 2003. <br>
+[4].	R. Zabih and J. Woodfill, “Non-parametric local transforms for computing visual correspondence,” in Computer Vision-ECCV. Springer, pp.151-158, 1994. <br>
+[5].	T. Ojala, M. Pietikainen, and D. Harwood “A comparative study of texture measures with classification based on featured distributions,” Pattern recognition, vol.29, no.1, pp.51-59, 1996. <br>
+[6].	M. Calonder, V. Lepetit, M. Ozuvsal, T. Trzcinski, C. Strecha, and P. Fua, “BRIEF: Computing a local binary descriptor very fast,” IEEE Transactions on Pattern Analysis and Machine Intelligence, vol.34, no.7, pp.1281-1298, 2001. <br>
+[7].	D. G. Lowe, “Distinctive Image Features from Scale-Invariant Keypoints,” International Journal of Computer Vision, vol.60, no.2, pp.91-110, 2004. <br>
+[8].	D. DeTone, T. Malisiewicz, A. Rabinovich, “Superpoint: Self-supervised interest point detection and description,” 2017. <br>
+[9].	Y. Ono, E. Trulls, P. Fua, and K. M. Yi, “Lf-net: Learning local features from images,” 2018. <br>
+[10].	P. Viola, W. M. Wells, “Alignment by maximization of mutual information,”  Proceedings of IEEE International Conference on Computer Vision, vol. 24, no. 2, pp. 137-154, 1997. 
