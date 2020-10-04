@@ -29,9 +29,9 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 
 
 # Experimental Results
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig4.jpg)
-## Tests on synthesized sequences
 
+## Tests on synthesized sequences
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig4.jpg)
 ## Tests on Real sequences
 
 ## Tests on Efficiency
