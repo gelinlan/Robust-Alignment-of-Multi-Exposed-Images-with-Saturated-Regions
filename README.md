@@ -21,8 +21,6 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig1.jpg)
 
-
-
 # Effect of intensity mapping function (IMF)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg)
 
