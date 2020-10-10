@@ -23,7 +23,7 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 Fig.1 Steps of the proposed method. <br>
 
 # Effect of intensity mapping function (IMF)
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg) 
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg) <br>
 Fig.2 Effects of different IMF. <br>
 It can be observed that the similarity of (c) is higher than (b), especially in the middle of two images and the tree truck. Wu’s IMF is a unidirectional mapping function. It mapping the image with more information to less information to ensure two differently exposed images are as consistent as possible. However, the normalized results is not ideal due to large EV interval between the two images. The proposed method proposed a novel bi-directional mapping function. The intensity larger thanζ1 in the left image are unchanged, the corresponding region in right images are mapped to left image to ensure the over-exposure region in both images are consistent. The intensity less thanζ2 in the right image remain constant, the corresponding region in the left image is mapped to right image to ensure the under-exposure region in both images keep same.
 
