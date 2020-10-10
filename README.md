@@ -19,14 +19,23 @@ For binary descriptor, hamming distance is non-differentiability and unsuitable 
 
 # The proposed method:
 
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig1.jpg)
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig1.jpg) <br>
+Fig.1 Steps of the proposed method. <br>
 
 # Effect of intensity mapping function (IMF)
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg)
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg) 
+Fig.2 Effects of different IMF. <br>
+It can be observed that the similarity of (c) is higher than (b), especially in the middle of two images and the tree truck. Wu’s IMF is a unidirectional mapping function. It mapping the image with more information to less information to ensure two differently exposed images are as consistent as possible. However, the normalized results is not ideal due to large EV interval between the two images. The proposed method proposed a novel bi-directional mapping function. The intensity larger thanζ1 in the left image are unchanged, the corresponding region in right images are mapped to left image to ensure the over-exposure region in both images are consistent. The intensity less thanζ2 in the right image remain constant, the corresponding region in the left image is mapped to right image to ensure the under-exposure region in both images keep same.
 
 # Effect of feature description
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig3.jpg)
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig3.jpg) <br>
+Fig.3 Effects of different feature map. <br>
+It can be observed that, 8-bits-LBP coded images can represent more details of images. Two sets of 8-bits-LBP coded images with different exposure are more similar after normalization, such as the clouds and the tree trunk. 
 
+# Effect of alignment
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig45.jpg) <br>
+Fig.4 Aligned results. <br>
+The aligned result of the proposed method is ideal due to the differentiable“Hamming” distance. Here, FSAT algorithm is used to detect the feature points to reduce matching errors. However, the matched result of Hamming distance is worse, because it directly counts the number of mismatched bits, and can not be optimized.
 
 # Experimental Results
 The proposed method is evaluated with a variety of synthesized images from benchmark datasets, public datasets [2] and real images. The proposed method are compared with: 1) existing non-parametric ordering features using MTB [3], CT [4], LBP [5] and BRIEF [6] methods, while employing the alignment algorithm shown in Section III; 2) the intensity-based IMF; 3) the feature-based method SIFT [7] and the hybird method IMF+SIFT; 4) IMF+BRIEF and IMF+BRIEF+“Hamming” distance (“HD”); 5) IMF+LBP [1]. 6) Learning-based matching methods SuperPoint [8] and LF-Net [9].
