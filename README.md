@@ -57,8 +57,7 @@ As motion parameters are unknown, the alignment results are evaluated in terms o
 It is noted that the MI values are different for various scenarios due to different contents (static/ dynamic scenes, little/severe saturation, and different EVs etc.), even the alignment performance is the same. But the performance comparison in terms of MI for the identical scene is meaningful.
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig5.jpg)
 ## Tests on Efficiency
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table7.jpg)
-![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table8.jpg)
+![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table78.jpg)
 
 # References
 [1].	S. Q. Wu, Z. G. Li, J. H. Zheng, and Z. J. Zhu, “Exposure robust method for aligning differently exposed images,” IEEE Signal Processing Letters, vol. 21, no. 7, pp. 885–889, Jul. 2014. <br>
