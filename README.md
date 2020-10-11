@@ -45,7 +45,7 @@ To evaluate the robustness to exposure, the first image is selected as the refer
 TABLE 1. Overall results performed on benchmark database. 
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table1.jpg)
 
-TABLE 2: Overall results performed on 40 Cai’s database
+TABLE 2: Overall results performed on 37 Cai’s database
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table2.jpg)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table3.jpg)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/table4.jpg)
