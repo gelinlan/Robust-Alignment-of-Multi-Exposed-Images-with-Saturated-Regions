@@ -1,31 +1,30 @@
 Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions
 =========
 
-Jun JIANG, Zhengguo LI, Shiqian WU, Liangcai ZENG and Shoulie XIE <br>
+Jun JIANG, Zhengguo LI, Shoulie XIE, Shiqian WU, and Liangcai ZENG <br>
 Wuhan University of Science and Technology, Wuhan, 430081, China <br>
 {jiangjun85, zengliangcai, shiqian.wu} @wust.edu.cn  <br>
 The Institute for Infocomm Research, Singapore, 138632 <br>
 {ezgli, slxie}@i2r.a-star.edu.sg <br>
 
-**Abstract:** It is challenging to align multi-exposed images due to large illumination variations, especially in presence of saturated regions. In this paper, a novel image alignment algorithm is proposed to cope with the multi-exposed images with saturated regions. Specifically, the multi-exposed images are first normalized by using intensity mapping functions (IMFs) in consideration of saturated pixels. Then, the normalized images are coded by using the local binary pattern (LBP). Finally, the coded images are aligned by formulating an optimization problem by using a differentiable “Hamming” distance. Experimental results show that the proposed algorithm outperforms state-of-the art alignment methods for multi-exposed images in terms of alignment accuracy and robustness to exposure values.
-
+**Abstract:** It is challenging to align multi-exposed images due to large illumination variations, especially in presence of saturated regions. In this paper, a novel image alignment algorithm is proposed to cope with the multi-exposed images with saturated regions. Specifically, the multi-exposed images are first normalized by using intensity mapping functions (IMFs) in consideration of saturated pixels. Then, the normalized images are coded by using the local binary pattern (LBP). Finally, the coded images are aligned by formulating an optimization problem by using a differentiable-“Hamming”-distance. Experimental results show that the proposed algorithm outperforms state-of-the-art alignment methods for multi-exposed images in terms of alignment accuracy and robustness to exposure values.
 # Challenges:
 
-Multi-exposed images contain saturated regions, leading the huge differences between images.
+Multi-exposed images contain saturated regions, yielding huge differences among images.
 
 LBP code does not capture the closeness of two bit-strings and it is sensitive to the rotation.
 
-For binary descriptor, hamming distance is non-differentiability and unsuitable for optimization.
+For binary descriptor, hamming distance is non-differentiable and unsuitable for optimization
 
 # The proposed method:
 
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig1.jpg) <br>
-Fig.1 Steps of the proposed method. <br>
+Fig.1 Flowchart of the proposed method. <br>
 
-# Effect of intensity mapping function (IMF)
+# Effects of intensity mapping functions (IMFs)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg) <br>
-Fig.2 Effects of different IMF. <br>
-It can be observed that the similarity of images in (c) is higher than (b), especially the clouds in the middle of two images and the tree truck. Wu’s IMF is a unidirectional mapping function. It mapping the image with more information to less information to ensure two differently exposed images are as consistent as possible. However, the normalized results is not ideal due to large EV interval between the two images. The proposed method proposed a novel bi-directional mapping function. The intensity larger thanζ1 in the left image are unchanged, the corresponding region in right images are mapped to left image to ensure the over-exposure region in both images are consistent. The intensity less thanζ2 in the right image remain constant, the corresponding region in the left image is mapped to right image to ensure the under-exposure region in both images keep same.
+Fig.2 Effects of different IMFs. <br>
+It can be observed that the similarity of images in (c) is higher than (b), especially the clouds in the middle of two images and the tree truck. Wu’s IMF is a unidirectional mapping function. It mapping the image with more information to less information to ensure two differently exposed images are as consistent as possible. However, the normalized results is not ideal due to large EV interval between the two images. The proposed method proposed a novel bi-directional mapping function. The intensity larger than ζ1 in the left image are unchanged, and the corresponding region in right images are mapped to left image to ensure the over-exposed region in both images are consistent. The intensity less than ζ2 in the right image remain constant, the corresponding region in the left image is mapped to right image to ensure the under-exposed region in both images keep same.
 
 # Effect of feature description
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig3.jpg) <br>
@@ -35,10 +34,10 @@ It can be observed that, 8-bits-LBP coded images can represent more details of i
 # Effect of alignment
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig45.jpg) <br>
 Fig.4 Aligned results. <br>
-The aligned result of the proposed method is ideal due to the differentiable“Hamming” distance. Here, FSAT algorithm is used to detect the feature points to reduce matching errors. However, the matched result of Hamming distance is worse, because it directly counts the number of mismatched bits, and can not be optimized.
+The aligned result of the proposed method is ideal due to the differentiable “Hamming” distance. Here, FSAT algorithm is used to detect the feature points to reduce matching errors. However, the matched result of Hamming distance is worse, because it directly counts the number of mismatched bits, and can not be optimized.
 
 # Experimental Results
-The proposed method is evaluated with a variety of synthesized images from benchmark datasets, public datasets（Cai's datasets） [2] and real images. The proposed method are compared with: 1) existing non-parametric ordering features using MTB [3], CT [4], LBP [5] and BRIEF [6] methods, while employing the alignment algorithm shown in Section III; 2) the intensity-based IMF; 3) the feature-based method SIFT [7] and the hybird method IMF+SIFT; 4) IMF+BRIEF and IMF+BRIEF+“Hamming” distance (“HD”); 5) IMF+LBP [1]. 6) Learning-based matching methods SuperPoint [8] and LF-Net [9].
+The proposed method is evaluated with a variety of synthesized images from benchmark datasets, public datasets（Cai's datasets [2] and real images. The proposed method are compared with: 1) existing non-parametric ordering features using MTB [3], CT [4], LBP [5] and BRIEF [6] methods, while employing the alignment algorithm shown in Section III; 2) the intensity-based IMF; 3) the feature-based method SIFT [7] and the hybird method IMF+SIFT; 4) IMF+BRIEF and IMF+BRIEF+“Hamming” distance (“HD”); 5) IMF+LBP [1]. 6) Learning-based matching methods SuperPoint [8] and LF-Net [9].
 ## Tests on synthesized sequences
 To evaluate the robustness to exposure, the first image is selected as the reference and other images are rotated by 50, and shifted 30 pixels and 10 pixels in y-axis and x-axis respectively. Table1-2 are the motion errors on benchmark and public database. The average errors of the proposed method is the smallest, which implies the proposed method is suitable for various scene sets alignment and robust to intensity variations. Tables 3-6 summarize the motion errors on “Snowman”, “BigTree”, “Pillar” and “Inscription” sequences. 
 
