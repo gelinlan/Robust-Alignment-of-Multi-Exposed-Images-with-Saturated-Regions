@@ -54,9 +54,9 @@ TABLE 2: Overall results performed on 37 Cai’s database
 ## Tests on Real sequences
 As motion parameters are unknown, the alignment results are evaluated in terms of mutual information (MI)[10], which is a successful measure for registering multi-modal images. Selecting the brightest image as reference, the MIs based on the 35 real sequences in file “Real sequences” are shown below.
 It is noted that the MI values are different for various scenarios due to different contents (static/ dynamic scenes, little/severe saturation, and different EVs etc.), even the alignment performance is the same. But the performance comparison in terms of MI for the identical scene is meaningful.
+
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig5.jpg)
 Fig.5 Comparison of IMF+LBP [1] , SuperPoint [8], LF-Net [9] and the proposed method on “BigTree” sequence (the first image and the last one). <br>
-
 The learning-based methods, SuperPoint and LF-Net do not provide motion parameters but they provide the matching point pairs of two images. Thus, the performances of SuperPoint and LF-Net are assessed by the number of consistent points and mismatching ones. Comparing the two methods, SuperPoint finds only 1 pair of consist point as shown in Fig.5(a), which can not obtain the motion parameters between two images. By contrast, the method of LF-net can find more feature points, but can not match these feature points correctly, as shown in Fig.5(b). The performances of IMF+LP and the propose methods are estimated by the motion errors (shown in Tables 1-6), the performances of the two methods shown in Fig.5(c) and Fig.5(d), which direct overlay the two aligned images. It can observed that the proposed method is better than IMF+LBP, the result of IMF+LBP has ghosting and circled by the two red ellipses. 
 
 ## Tests on Efficiency
