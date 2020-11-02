@@ -10,11 +10,11 @@ Institute for Infocomm Research, Singapore, 138632 <br>
 **Abstract:** It is challenging to align multi-exposed images due to large illumination variations, especially in presence of saturated regions. In this paper, a novel image alignment algorithm is proposed to cope with the multi-exposed images with saturated regions. Specifically, the multi-exposed images are first normalized by using intensity mapping functions (IMFs) in consideration of saturated pixels. Then, the normalized images are coded by using the local binary pattern (LBP). Finally, the coded images are aligned by formulating an optimization problem by using a differentiable-“Hamming”-distance. Experimental results show that the proposed algorithm outperforms state-of-the-art alignment methods for multi-exposed images in terms of alignment accuracy and robustness to exposure values.
 # Challenges:
 
-Multi-exposed images contain saturated regions, yielding huge differences among images.
+Multi-exposed images contain saturated regions, which yield huge differences among images.
 
 LBP code does not capture the closeness of two bit-strings and it is sensitive to the rotation.
 
-For binary descriptor, hamming distance is non-differentiable and unsuitable for optimization
+For binary descriptor, Hamming distance is non-differentiable and unsuitable for optimization
 
 # The proposed method:
 
@@ -24,9 +24,9 @@ Fig.1 Flowchart of the proposed method. <br>
 # Effects of intensity mapping functions (IMFs)
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig2.jpg) <br>
 Fig.2 Effects of different IMFs. <br>
-It can be observed that the similarity of images in (c) is higher than (b), especially the clouds in the middle of two images and the tree truck. Wu’s IMF is a unidirectional mapping function. It mapping the image with more information to less information to ensure two differently exposed images are as consistent as possible. However, the normalized results is not ideal due to large EV interval between the two images. The proposed method proposed a novel bi-directional mapping function. The intensity larger than ζ1 in the left image are unchanged, and the corresponding region in right images are mapped to left image to ensure the over-exposed region in both images are consistent. The intensity less than ζ2 in the right image remain constant, the corresponding region in the left image is mapped to right image to ensure the under-exposed region in both images keep same.
+It can be observed that the images in (c) is more similar than (b), especially the clouds (in the middle) and the tree truck (in the right). Wu’s IMF is a unidirectional mapping function, which maps the image with more information to the one with less information to ensure two differently exposed images are consistent. However, the normalized results is not ideal due to large EV interval between two images. The proposed method employs a novel bi-directional mapping function. The intensities larger than ζ1 in the left image are unchanged, the remaining intensities in right images are mapped to left image to ensure the over-exposure region in both images are consistent. The intensities less than ζ2 in the right image remain constant, the remaining intensities in the left image are mapped to right image to ensure the under-exposure region in both images are consistent.
 
-# Effect of feature description
+# Effects of feature descriptions
 ![](https://github.com/gelinlan/Robust-Alignment-of-Multi-Exposed-Images-with-Saturated-Regions/blob/master/Fig3.jpg) <br>
 Fig.3 Effects of different feature map. <br>
 It can be observed that, 8-bits-LBP coded images can represent more details of images. Two sets of 8-bits-LBP coded images with different exposure are more similar after normalization, such as the clouds and the tree trunk. 
