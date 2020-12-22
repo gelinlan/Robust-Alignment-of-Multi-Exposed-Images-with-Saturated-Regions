@@ -80,7 +80,7 @@ Citiation
 ========
 If you find this work helpful, please consider citing the following paper:
 
-@InProceedings{Alignment__Multi-Exposed_Images,
+@InProceedings{Align_Multi-Exposed_Images,
   author    = {Jun JIANG, Zhengguo LI, Shoulie XIE, Shiqian WU, and Liangcai ZENG },
   title     = {Robust Alignment of Multi-Exposed Images with Saturated Regions},
   booktitle = {IEEE ACCESS},
