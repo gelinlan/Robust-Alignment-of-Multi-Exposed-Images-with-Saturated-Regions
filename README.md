@@ -74,3 +74,15 @@ Fig.6 Mutual information for 35 real sequences.
 [8].	D. DeTone, T. Malisiewicz, A. Rabinovich, “Superpoint: Self-supervised interest point detection and description,” 2017. <br>
 [9].	Y. Ono, E. Trulls, P. Fua, and K. M. Yi, “Lf-net: Learning local features from images,” 2018. <br>
 [10].	P. Viola, W. M. Wells, “Alignment by maximization of mutual information,”  Proceedings of IEEE International Conference on Computer Vision, vol. 24, no. 2, pp. 137-154, 1997. 
+
+
+Citiation
+========
+If you find this work helpful, please consider citing the following paper:
+
+@InProceedings{Alignment__Multi-Exposed_Images,
+  author    = {Jun JIANG, Zhengguo LI, Shoulie XIE, Shiqian WU, and Liangcai ZENG },
+  title     = {Robust Alignment of Multi-Exposed Images with Saturated Regions},
+  booktitle = {IEEE ACCESS},
+  year      = {2020},
+}
